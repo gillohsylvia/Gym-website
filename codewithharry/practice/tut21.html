@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and clear</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        max-width: 80%;
+        background-color: rgb(228, 228, 228);
+        margin: auto;
+        overflow: hidden;
+    }
+    .item{
+        background-color: rgb(214, 214, 214);
+        padding: 5px;
+        margin: 5px;
+        text-align: center;
+        float: left;
+        width: 30%;
+        height: 350px;
+        border: 5px solid goldenrod;
+        border-radius: 10px;
+    }
+    .para{
+        text-align: justify;
+    }
+    #fruit{
+        background-color: rgb(214, 214, 214);
+        padding: 10px;
+        margin: 15px;
+        text-align: center;
+        float: left;
+        width: 30%;
+    }
+    #computer{
+        background-color: rgb(214, 214, 214);
+        padding: 10px;
+        margin: 15px;
+        text-align: center;
+        float: left;
+        width: 30%;
+    }
+    #stationary{
+        background-color: rgb(214, 214, 214);
+        padding: 10px;
+        margin: 15px;
+        text-align: center;
+        float: left;
+        width: 30%;
+    }
+    @media only screen and (max-width: 768px){
+        .item{
+            width: 100%;
+        }
+    }
+    h1{
+        text-align: center;
+        margin: 20px;
+        padding: 20px;
+        background-color: rgb(214, 214, 214);
+    }
+</style>
+<body style="background-color: rgb(50, 47, 50);">
+    <div class="container">
+        <h1>Welome to my store</h1>
+        <div id="fruit" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitspara" class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem suscipit deserunt quis, molestiae blanditiis sit incidunt quae temporibus eligendi repellendus molestias dolorum beatae qui ex quibusdam amet rem repudiandae non!</p>
+        </div>
+        <div id="computer" class="item">
+            <h3>Computer</h3>
+            <p id="computerpara" class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem suscipit deserunt quis, molestiae blanditiis sit incidunt quae temporibus eligendi repellendus molestias dolorum beatae qui ex quibusdam amet rem repudiandae non!</p>
+        </div>
+        <div id="stationary" class="item">
+            <h3>stationary</h3>
+            <p id="stationarypara" class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem suscipit deserunt quis, molestiae blanditiis sit incidunt quae temporibus eligendi repellendus molestias dolorum beatae qui ex quibusdam amet rem repudiandae non!</p>
+        </div>
+    </div>
+</body>
+</html>
